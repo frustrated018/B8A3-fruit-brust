@@ -18,12 +18,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
     <Style>
-       .font-lato{
-        font-family: 'Lato', sans-serif;
-       }
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
     </Style>
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/70cfb03b60.js" crossorigin="anonymous"></script>
+
+    <!-- custom Tailwind color and background -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#F85559',
+                    },
+                    backgroundImage: {
+                        
+                    }
+                }
+            }
+        }
+    </script>
 
 <body class="font-lato">
+
+    <!-- Header section starts here -->
+    <header class="max-w-screen-xl mx-auto my-12">
+        <!-- Navbar starts here -->
+        <nav class="navbar bg-primary-color rounded-[600px] flex gap-[12.75rem] py-5">
+            <div class="">
+                <ul class="menu menu-horizontal text-white font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <!-- Logo and title -->
+            <div class="gap-4">
+                <img src="./images/logo.png" alt="logo">
+                <h1 class="text-right text-white text-[40px] font-bold">Fruit Burst</h1>
+            </div>
+            <!-- search bar -->
+            <div class="bg-white rounded-[50px]">
+                <input type="text" placeholder="Search here" class="input input-ghost w-[80%] " />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            </div>
+            
+
+        </nav>
+    </header>
+
 
 </body>
 
