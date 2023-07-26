@@ -44,12 +44,12 @@
         }
     </script>
 
-<body class="font-lato max-w-screen-xl mx-auto px-4 lg:px-10">
+<body class="font-lato max-w-screen-xl mx-auto px-5 lg:px-10">
 
     <header>
         <!-- navbar starts here-->
-        <nav
-            class="flex justify-between items-center px-4 lg:px-9 py-4 lg:py-5 lg:bg-primary-color rounded-[500px] mt-5 mb-5 lg:mt-10 lg:mb-10">
+        <!-- <nav
+        class="flex justify-between md:justify-around items-center px-4 lg:px-9 py-4 lg:py-5 lg:bg-primary-color rounded-[500px] mt-5 mb-5 lg:mt-10 lg:mb-10">
 
             <div class="hidden lg:flex lg:flex-1">
                 <ul class="menu menu-horizontal px-1 text-white">
@@ -84,7 +84,7 @@
                     class="relative input lg:w-[75%] input-bordered rounded-full" />
                 <img class="m-4 absolute w-5 rounded-full" src="./images/search.svg" alt="Search icon">
             </div>
-        </nav>
+        </nav> -->
         <!-- navbar ends here -->
 
         <!-- Carousel Section starts here -->
@@ -189,7 +189,8 @@
 
         <!-- Various fruits section starts here -->
         <section class=" hidden lg:block relative -mt-32">
-            <div class=" rounded-lg shadow-lg w-full lg:w-[80%] lg:mx-auto hidden lg:flex flex-row justify-evenly gap-4 text-center bg-white py-[20px] px-[20px] ">
+            <div
+                class=" rounded-lg shadow-lg w-full lg:w-[80%] lg:mx-auto hidden lg:flex flex-row justify-evenly gap-4 text-center bg-white py-[20px] px-[20px] ">
                 <div>
                     <img src="./images/fruit1.png" alt="grapes">
                     <p>Grapes</p>
@@ -213,10 +214,56 @@
             </div>
         </section>
 
-       <!-- various fruits section ends here -->
-        
+        <!-- various fruits section ends here -->
+
     </header>
     <main>
+        <!-- Deal of the day section -->
+        <div class="flex  flex-col lg:flex-row lg:mt-24 lg:mb-24 lg:gap-80 items-center ">
+            <!-- text section -->
+            <div class="flex flex-col gap-6 text-center lg:text-left">
+                <h1 class="text-neutral-900 text-3xl lg:text-5xl font-extrabold  mt-6 ">Deal of the day</h1>
+                <p class="text-neutral-900 text-opacity-60 text-base font-medium leading-relaxed mb-6 ">
+                    Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                    <br>
+                    Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+            </div>
+
+            <!-- countdown timer -->
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl items-center">
+                        <span style="--value:29;"></span>
+                        <img class="pl-3 lg:pl-6 h-6 w6" src="./images/countdown.svg" alt="threedot">
+                    </span>
+                    days
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl items-center">
+                        <span style="--value:15;"></span>
+                        <img class="pl-3 lg:pl-6 h-6 w6" src="./images/countdown.svg" alt="threedot">
+                    </span>
+                    hours
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl items-center">
+                        <span style="--value:25;"></span>
+                        <img class="pl-3 lg:pl-6 h-6 w6" src="./images/countdown.svg" alt="threedot">
+                    </span>
+                    min
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                        <span style="--value:08;"></span>
+                    </span>
+                    sec
+                </div>
+            </div>
+            <!-- Countdown timer end -->
+        </div>
+
+
 
     </main>
 
