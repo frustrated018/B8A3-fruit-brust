@@ -34,7 +34,7 @@
                         'primary-color': '#F85559',
                     },
                     backgroundImage: {
-                        
+
                     }
                 }
             }
@@ -42,34 +42,47 @@
     </script>
 
 <body class="font-lato">
-
-    <!-- Header section starts here -->
-    <header class="max-w-screen-xl mx-auto my-12">
-        <!-- Navbar starts here -->
-        <nav class="navbar bg-primary-color rounded-[600px] flex gap-[12.75rem] py-5">
-            <div class="">
-                <ul class="menu menu-horizontal text-white font-medium">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                </ul>
-            </div>
-            <!-- Logo and title -->
-            <div class="gap-4">
-                <img src="./images/logo.png" alt="logo">
-                <h1 class="text-right text-white text-[40px] font-bold">Fruit Burst</h1>
-            </div>
-            <!-- search bar -->
-            <div class="bg-white rounded-[50px]">
-                <input type="text" placeholder="Search here" class="input input-ghost w-[80%] " />
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-            </div>
-            
-
-        </nav>
+    <header class="container mx-auto px-10">
+                <!-- navbar starts here-->
+                <nav
+                class="flex justify-between items-center px-4 lg:px-9 py-4 lg:py-5 lg:bg-primary-color rounded-[500px] mt-5 mb-5 lg:mt-10 lg:mb-10">
+    
+                <div class="hidden lg:flex lg:flex-1">
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+    
+                <div class="flex lg:justify-center items-center gap-3 lg:pr-10">
+                    <img class="w-10" src="./images/logo.png" alt="logo">
+                    <h3 class="text-black lg:text-white font-bold text-2xl lg:text-4xl">Fruit Burst</h3>
+                </div>
+    
+                <div class="flex-1 flex justify-end lg:hidden">
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="btn btn-ghost m-1">
+                            <img src="./images/dropdown.svg" alt="dropdown">
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                      </div>
+                </div>
+    
+                <div class="lg:flex-1 hidden lg:flex lg:justify-end">
+                    <input type="text" placeholder="Search here"
+                        class="relative input lg:w-[75%] input-bordered rounded-full" />
+                    <img class="m-4 absolute w-5 rounded-full" src="./images/search.svg" alt="Search icon">
+                </div>
+            </nav>
+            <!-- navbar ends here -->
     </header>
-
 
 </body>
 
