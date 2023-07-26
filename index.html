@@ -33,93 +33,156 @@
                     colors: {
                         'primary-color': '#F85559',
                     },
+                    backgroundImage: {
+                        'slide1': "url('./images/banner1.png')",
+                        'slide2': "url('./images/banner2.png')",
+                        'slide3': "url('./images/banner3.png')",
+                        'slide4': "url('./images/banner4.png')",
+                    },
                 }
             }
         }
     </script>
 
-<body class="font-lato">
-    <header class="container mx-auto px-4 lg:px-10">
-                <!-- navbar starts here-->
-                <nav
-                class="flex justify-between items-center px-4 lg:px-9 py-4 lg:py-5 lg:bg-primary-color rounded-[500px] mt-5 mb-5 lg:mt-10 lg:mb-10">
-    
-                <div class="hidden lg:flex lg:flex-1">
-                    <ul class="menu menu-horizontal px-1 text-white">
+<body class="font-lato max-w-screen-xl mx-auto px-4 lg:px-10">
+    <header>
+        <!-- navbar starts here-->
+        <nav
+            class="flex justify-between items-center px-4 lg:px-9 py-4 lg:py-5 lg:bg-primary-color rounded-[500px] mt-5 mb-5 lg:mt-10 lg:mb-10">
+
+            <div class="hidden lg:flex lg:flex-1">
+                <ul class="menu menu-horizontal px-1 text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+
+            <div class="flex lg:justify-center items-center gap-3 lg:pr-10">
+                <img class="w-10" src="./images/logo.png" alt="logo">
+                <h3 class="text-black lg:text-white font-bold text-2xl lg:text-4xl">Fruit Burst</h3>
+            </div>
+
+            <div class="flex-1 flex justify-end lg:hidden">
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0" class="btn btn-ghost m-1">
+                        <img src="./images/dropdown.svg" alt="dropdown">
+                    </label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
                     </ul>
                 </div>
-    
-                <div class="flex lg:justify-center items-center gap-3 lg:pr-10">
-                    <img class="w-10" src="./images/logo.png" alt="logo">
-                    <h3 class="text-black lg:text-white font-bold text-2xl lg:text-4xl">Fruit Burst</h3>
+            </div>
+
+            <div class="lg:flex-1 hidden lg:flex lg:justify-end">
+                <input type="text" placeholder="Search here"
+                    class="relative input lg:w-[75%] input-bordered rounded-full" />
+                <img class="m-4 absolute w-5 rounded-full" src="./images/search.svg" alt="Search icon">
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+
+        <!-- Carousel Section starts here -->
+
+        <div class="carousel w-full">
+            <!-- slide1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle text-white bg-black border-0">❮</a>
+                    <a href="#slide2" class="btn btn-circle text-white bg-black border-0">❯</a>
                 </div>
-    
-                <div class="flex-1 flex justify-end lg:hidden">
-                    <div class="dropdown dropdown-hover">
-                        <label tabindex="0" class="btn btn-ghost m-1">
-                            <img src="./images/dropdown.svg" alt="dropdown">
-                        </label>
-                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                        </ul>
-                      </div>
+                <!-- Daisyui hero text over bg overlay -->
+                <div class="hero min-h-screen bg-slide1">
+                    <div class="bg-gradient-to-b from-gray-900 to-transparent hero-overlay"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="mb-5 text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-base">We supply highly quality organic products</p>
+                            <button
+                                class="btn btn-primary capitalize bg-primary-col text-sm text-white font-extrabold border-0">Shop
+                                Now</button>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="lg:flex-1 hidden lg:flex lg:justify-end">
-                    <input type="text" placeholder="Search here"
-                        class="relative input lg:w-[75%] input-bordered rounded-full" />
-                    <img class="m-4 absolute w-5 rounded-full" src="./images/search.svg" alt="Search icon">
+
+
+            </div>
+            <!-- slide2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle text-white bg-black border-0">❮</a>
+                    <a href="#slide3" class="btn btn-circle text-white bg-black border-0">❯</a>
                 </div>
-            </nav>
-            <!-- navbar ends here -->
-
-            <!-- Carousel Section starts here -->
-
-            <div class="carousel w-full">
-                <!-- slide1 -->
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./images/banner1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle text-white bg-black">❮</a> 
-                    <a href="#slide2" class="btn btn-circle text-white bg-black">❯</a>
-                  </div>
-                </div> 
-                <!-- slide2-->
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="./images/banner2.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a> 
-                    <a href="#slide3" class="btn btn-circle text-white bg-black">❯</a>
-                  </div>
-                </div> 
-                <!-- slide3 -->
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="./images/banner3.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle text-white bg-black">❮</a> 
-                    <a href="#slide4" class="btn btn-circle text-white bg-black">❯</a>
-                  </div>
-                </div> 
-                <!-- slide4 -->
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="./images/banner4.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle text-white bg-black">❮</a> 
-                    <a href="#slide1" class="btn btn-circle text-white bg-black">❯</a>
-                  </div>
+                <!-- Daisyui hero text over bg overlay -->
+                <div class="hero min-h-screen bg-slide2">
+                    <div class="bg-gradient-to-b from-gray-900 to-transparent hero-overlay"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="mb-5 text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-base">We supply highly quality organic products</p>
+                            <button
+                                class="btn btn-primary capitalize bg-primary-col text-sm text-white font-extrabold border-0">Shop
+                                Now</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+
+            </div>
+            <!-- slide3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle text-white bg-black border-0">❮</a>
+                    <a href="#slide4" class="btn btn-circle text-white bg-black border-0">❯</a>
+                </div>
+                <!-- Daisyui hero text over bg overlay -->
+                <div class="hero min-h-screen bg-slide3">
+                    <div class="bg-gradient-to-b from-gray-900 to-transparent hero-overlay"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="mb-5 text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-base">We supply highly quality organic products</p>
+                            <button
+                                class="btn btn-primary capitalize bg-primary-col text-sm text-white font-extrabold border-0">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- slide4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle text-white bg-black border-0">❮</a>
+                    <a href="#slide1" class="btn btn-circle text-white bg-black border-0">❯</a>
+                </div>
+                <!-- Daisyui hero text over bg overlay -->
+                <div class="hero min-h-screen bg-slide4">
+                    <div class="bg-gradient-to-b from-gray-900 to-transparent hero-overlay"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="mb-5 text-6xl font-extrabold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-base">We supply highly quality organic products</p>
+                            <button
+                                class="btn btn-primary capitalize bg-primary-col text-sm text-white font-extrabold border-0">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
 
 
 
-            
+
     </header>
 
 </body>
